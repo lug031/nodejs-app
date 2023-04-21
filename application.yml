@@ -1,2 +1,8 @@
-mongo.uri=mongodb://127.0.0.1:27017/microservice
-pg.uri=postgresql://iblrcnaa:NzSFyMEaa2hAOZ1NJxizLJjXNR8r8pz6@mahmud.db.elephantsql.com/iblrcnaa
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lug031/nodejs-app
+          search-paths: 'nodejs-app-dev.yml'
+
